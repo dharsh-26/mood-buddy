@@ -1,0 +1,148 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study History | Mood Buddy</title>
+    <link rel="icon" type="image/png" href="images/5516842.png">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+    <img src="images/8913959.png" alt="Mood Buddy Logo" width="35" height="35" class="me-2">
+    Mood Buddy
+</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="history.html">History</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+    <button id="darkModeBtn" class="btn btn-dark ms-2">
+        🌙 Dark Mode
+    </button>
+</li>
+
+                <li class="nav-item">
+                    <button id="logoutBtn" class="btn btn-danger ms-2">
+                        Logout
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- History -->
+
+<div class="container py-5">
+
+    <h2 class="text-center text-primary mb-4">
+        📚 Study History
+    </h2>
+
+    <p class="text-center text-muted">
+        View all your previous study plans and track your progress.
+    </p>
+
+    <div class="card shadow border-0">
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-hover align-middle">
+
+                    <thead class="table-primary">
+
+                        <tr>
+
+                            <th>Date</th>
+                            <th>Mood</th>
+                            <th>Subject</th>
+                            <th>Study Time</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="historyTable">
+
+                        <!-- Data will be added by history.js -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+
+    <p class="mb-0">
+        © 2026 Mood Buddy | All Rights Reserved
+    </p>
+
+</footer>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- History JavaScript -->
+
+<script src="js/history.js"></script>
+<script src="/js/darkmode.js"></script>
+
+</body>
+
+</html>
